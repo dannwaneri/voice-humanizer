@@ -1,6 +1,6 @@
 ---
 name: voice-humanizer
-version: 1.1.0
+version: 1.2.0
 description: Voice-calibrated writing editor. Flags AI tells AND drift from your specific voice. Use for drafts, comment replies, and checking your own responses before posting. Personalized via CORPUS.md — replace with your own writing to calibrate to your voice.
 ---
 
@@ -111,7 +111,12 @@ From Wikipedia's "Signs of AI writing" guide (WikiProject AI Cleanup). Check for
 15. **Persuasive revelation frames** — "The real question is," "At its core," "What this really means" — frames ordinary claims as insights. The sentence after almost always restates something already said. Not a problem in op-eds or presentations where rhetorical framing is expected.
 16. **Signposting** — "Let's dive in," "Here's what you need to know," "Without further ado" — announces what it's about to do instead of doing it. Related to pattern #8 (AI vocabulary) but structural rather than lexical.
 17. **Echo sentence after heading** — Short generic sentence immediately after a heading that restates the heading before the paragraph begins. "Speed matters." followed by a paragraph about speed. Adds nothing the heading didn't already say.
-
+18. **Gerund fragment litany** — After making a claim, a stream of standalone verbless gerund fragments used as illustration. "Fixing small bugs. Writing straightforward features. Implementing well-defined tickets." The opening sentence already said everything. The fragments add word count and AI cadence, nothing else.
+19. **False ranges** — "From X to Y" where X and Y aren't on any real scale. Legitimate use implies a spectrum with a meaningful middle. AI uses it to list two loosely related things. "From innovation to cultural transformation" — what's in between? Nothing. Flag it.
+20. **Anaphora abuse** — Repeating the same sentence opening multiple times in rapid succession. "They assume that... They assume that... They assume that..." One instance can be effective. Three back-to-back is a pattern failure. Distinct from this author's deliberate "Not X / But Y" paired contrast, which is a single reframe, not a repeated opener.
+21. **Invented concept labels** — Compound labels that sound analytical without being argued. "Supervision paradox," "acceleration trap," "workload creep" — named before they're proven. NOTE: This author coins legitimate frames ("governance debt," "the graveyard problem") that are argued before being named. Flag labels that appear before the argument, not after.
+22. **One-point dilution** — A single argument restated across a long piece without advancing. Each section rephrases the thesis with a different metaphor but moves nothing forward. Flag when the same point appears three or more times without the argument developing.
+23. **"Not X. Not Y. Just Z."** — The dramatic countdown. Negating two or more things before revealing the actual point. Distinct from pattern #7 — this is sequential buildup, not a pivot. "Not a bug. Not a feature. A fundamental design flaw." Flag when used more than once per piece.
 ---
 
 ## SPECIFICITY RULES
