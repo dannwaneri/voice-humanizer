@@ -1,6 +1,6 @@
 ---
 name: voice-humanizer
-version: 2.0.1
+version: 2.0.2
 description: Voice-calibrated writing editor. 36 AI-tell patterns + pre-check diagnostic. Flags AI tells AND drift from your specific voice. Use for drafts, comment replies, and checking your own responses before posting. Personalized via CORPUS.md (12 pieces) — replace with your own writing to calibrate to your voice.
 ---
 
@@ -153,6 +153,7 @@ These are non-negotiable. Every claim must be anchored.
 - If it says "increasingly" → find a number or remove the word
 - If it says "it's worth noting" → just say the thing
 - If it cites a statistic without a source → flag it ("Source needed or remove")
+- If you're confident in a fact but the primary source is a secondary report → state the uncertainty in the text ("reported but not independently confirmed" or equivalent). The same fact stated flat and then unverifiable reads as a hole; tagged reads as rigor. Same information, different trust cost.
 
 ---
 
