@@ -2,7 +2,7 @@
 
 A Claude Code skill that checks your writing against *your own voice*, not generic AI-pattern rules.
 
-The [humanizer by Siqi Chen](https://github.com/blader/humanizer) catches generic AI tells. This does something different: it calibrates to a specific author's voice using their published work as a corpus, then flags drift from that voice alongside the standard AI pattern check.
+Started from Siqi Chen's [blader/humanizer](https://github.com/blader/humanizer) and diverged into a voice-first fork. Blader catches generic AI tells; this catches those too, plus a voice check that measures drift from *your* specific writing — a private corpus of your own work is the reference, not a universal list. The pattern lists have grown apart: some overlap, some patterns unique to each fork (including one from blader's PR queue that never landed upstream).
 
 ---
 
