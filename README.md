@@ -26,6 +26,37 @@ The [humanizer by Siqi Chen](https://github.com/blader/humanizer) catches generi
 
 ---
 
+## Example
+
+Here's voice-humanizer catching drift a generic humanizer would miss.
+
+**Before (draft):**
+
+> Skills in Claude Code are stored across three locations. Understanding
+> the sync behavior helps you avoid unexpected issues. The install
+> directory holds runtime files, the manifest cache stores metadata, and
+> your git repo is the source of truth.
+
+**Flag:**
+
+> Voice drift — three-item list where your corpus compresses to two.
+> "Understanding X helps you avoid Y" is the signpost-before-the-move
+> construction (#33) — your corpus states the failure, not the promise.
+> Parallel three-clause structure ("A holds B, C stores D, E is F")
+> shows uniform investment (#36) where your corpus is uneven.
+>
+> No AI pattern fires hard. Grammar's clean. But it doesn't sound like you.
+
+**After:**
+
+> Skills live in three places: the install directory (runtime files),
+> the manifest cache (metadata), the git repo (source of truth). Edit
+> one and forget the others, next sync clobbers you. Ask me how I know.
+
+A generic humanizer would pass the Before. Voice-humanizer caught it because the corpus knew this author compresses lists, states failures instead of announcing help, and closes on lived experience. That's the difference.
+
+---
+
 ## Install
 
 ```bash
@@ -42,32 +73,6 @@ Then replace `CORPUS.md` with your own writing. See `SETUP.md` for full instruct
 Generic humanizers check for patterns to avoid. This one checks for patterns to *match* — your specific cadences, the kinds of specificity you reach for, what good writing in your voice actually sounds like vs what Claude-flavored-you sounds like.
 
 The corpus is private (`.gitignore`). The skill and structure are public.
-
-### Example
-
-Here's voice-humanizer catching drift that a generic humanizer would miss.
-
-**Before (draft):**
-
-> The fingerprint tracks rhythm patterns, paragraph opening style,
-> specificity signals, what you reach for when you need a concrete
-> detail, and — just as important — what you don't do.
-
-**Flag:**
-
-> Voice drift — list of five items where your corpus shows you compress
-> to two. Em dash doing emotional emphasis work your corpus handles
-> structurally.
-
-**After:**
-
-> The fingerprint tracks what you reach for and — just as important —
-> what you don't. Rhythm, specificity, the patterns absent from your
-> corpus that signal drift.
-
-No AI pattern was triggered. A generic humanizer would have passed this.
-Voice-humanizer caught it because the corpus knew this author compresses
-lists. That's the difference.
 
 ---
 
