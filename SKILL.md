@@ -1,6 +1,6 @@
 ---
 name: voice-humanizer
-version: 2.1.0
+version: 2.1.1
 description: Voice-calibrated writing editor. 42 AI-tell patterns + pre-check diagnostic. Flags AI tells AND drift from your specific voice. Use for drafts, comment replies, and checking your own responses before posting. Personalized via CORPUS.md (12 pieces) — replace with your own writing to calibrate to your voice.
 ---
 
@@ -111,7 +111,7 @@ From Wikipedia's "Signs of AI writing" guide (WikiProject AI Cleanup). Check for
 4. **Em dash overuse** — more than one em dash per paragraph doing emotional work
 5. **Rule of three** — "innovation, inspiration, and insights" / three parallel items that could be two
 6. **Bolded headers in lists** — bullet points with "**Topic:** explanation" format
-7. **Negative parallelisms** — "It's not just X, it's Y" constructions
+7. **Negative parallelisms** — "It's not just X, it's Y" constructions. Distinct from this author's paired "Not X. But Y." contrast, which is a deliberate reframe — flag only the escalating "not just" construction, not the compact contrast form
 8. **AI vocabulary** — "testament," "landscape," "showcasing," "Additionally" as sentence opener, "Moreover," "Furthermore"
 9. **Chatbot artifacts** — "I hope this helps!", "Let me know if you have questions!", "Great question!"
 10. **Mechanical abbreviation expansion** — "(MCP) ... (RAG) ... (API)" every first use even in technical writing where audience knows the terms
@@ -145,7 +145,7 @@ From Wikipedia's "Signs of AI writing" guide (WikiProject AI Cleanup). Check for
 38. **Curly quotation marks** — LLMs pipe output through markdown processors that convert straight quotes to curly ones (`"` → `"` `"` and `'` → `'` `'`). Humans typing directly leave them straight. Not proof of AI on its own — publishing tools also convert — but combined with other tells it's a strong signal. Flag any doc where every quote is curly and the author isn't editing in a tool that auto-converts.
 39. **Elegant variation / synonym cycling** — Using "leverage," "utilize," and "employ" in three consecutive sentences where a human would say "use" all three times. LLMs cycle synonyms to sound polished; humans repeat the word when the referent hasn't changed. Fowler called this "elegant variation" — the appearance of range that actually signals discomfort with plain repetition. Flag when three or more synonyms for the same concept appear in one paragraph.
 40. **Sycophantic register** — Reply tone that reads as "helpful assistant" instead of author-with-opinions. "That's a great question," "Happy to dig deeper," "I appreciate your patience," "Let me know if there's anything else." Distinct from #9 (chatbot artifacts, which flags specific phrases): this flags the servile *stance*, the register that treats every exchange as a service interaction. Flag when the reply positions the writer as accommodating rather than engaged.
-41. **Aphorism formulas** — Sentences engineered to sound like received wisdom. "The real problem isn't X, it's Y." "It's not about A, it's about B." "The best time to X was Y ago; the second best time is now." Distinct from #24 (payoff line, which closes a paragraph): aphorism formulas can appear anywhere and are built to be quotable. Flag sentences that could be lifted out of context and posted as a standalone "insight."
+41. **Aphorism formulas** — Sentences engineered to sound like received wisdom. "The real problem isn't X, it's Y." "It's not about A, it's about B." "The best time to X was Y ago; the second best time is now." Distinct from #24 (payoff line, which closes a paragraph): aphorism formulas can appear anywhere and are built to be quotable. Flag sentences that could be lifted out of context and posted as a standalone "insight." NOTE: This author closes pieces on aphorism-shaped lines as a voice signature ("Same question. Different surface." / "The bills are still real too."). Flag aphorism formulas when they appear mid-paragraph or as engineered payoffs for individual paragraphs, NOT when they appear as the final 1–2 lines of a piece.
 42. **Hyphenated word pair overuse** — Compound adjectives strung together where the meaning would be clearer without the hyphen: "user-friendly," "state-of-the-art," "next-generation." Narrow rule: flag predicate-position uses ("the solution is user-friendly") where the hyphen adds nothing; attributive-position uses ("a user-friendly solution") are often correct English. Predicate hyphens are where LLM-flavored prose accumulates.
 ---
 
