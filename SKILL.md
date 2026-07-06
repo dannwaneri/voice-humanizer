@@ -1,6 +1,6 @@
 ---
 name: voice-humanizer
-version: 2.1.1
+version: 2.1.2
 description: Voice-calibrated writing editor. 42 AI-tell patterns + pre-check diagnostic. Flags AI tells AND drift from your specific voice. Use for drafts, comment replies, and checking your own responses before posting. Personalized via CORPUS.md (12 pieces) — replace with your own writing to calibrate to your voice.
 ---
 
